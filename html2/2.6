@@ -14,12 +14,11 @@
         <h1>BELAJAR MENJADI LEBIH KREATIF.</h1>
         <p>Progate adalah platform online untuk belajar coding.</p>
         <p>Kami menawarkan lingkungan pemograman yang lengkap untuk mempermudah Anda memulai.</p>
-        <!-- Ketik code Anda di bawah -->
         <div class="btn-wrapper">
-          <a class="btn signup" href="#">Daftar dengan Email</a>
+          <a href="#" class="btn signup">Daftar dengan Email</a>
           <p>atau</p>
-          <a class="btn facebook" href="#">Daftar dengan Facebook</a>
-          <a class="btn twitter" href="#">Daftar dengan Twitter</a>
+          <a href="#" class="btn facebook">Daftar dengan Facebook</a>
+          <a href="#" class="btn twitter">Daftar dengan Twitter</a>
         </div>
       </div>
     </div>
@@ -32,9 +31,7 @@
   </body>
 </html>
 
-
-################################
-
+#########################################
 body {
   margin: 0;
   font-family: "Lucida Grande";
@@ -55,6 +52,9 @@ a {
   background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
   color: white;
+  /* Ubah nilai property text-align ke center */
+  text-align:center;
+  
 }
 
 .top-wrapper h1 {
@@ -69,45 +69,38 @@ a {
   margin-bottom: 3px;
 }
 
-/* Tambahkan CSS untuk btn */
-.btn{
-  padding-top: 12px;
-padding-bottom: 12px;
-padding-left: 24px;
-padding-right: 24px;
-color: white;
-display: inline-block;
-opacity: 0.8;
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  /* Ubah nilai border-radius ke 4px */
+  border-radius:4px;
 }
 
-/* Tambahkan CSS untuk signup */
+/* Tambahkan CSS untuk btn pada saat ditunjuk */
+.btn:hover{
+  opacity: 1;
+}
+
+
 .signup {
-  background-color:#239b76;
+  background-color: #239b76;
 }
 
-/* Tambahkan CSS untuk facebook */
 .facebook {
-  background-color:#3b5998;
+  background-color: #3b5998;
   margin-right: 10px;
 }
 
-/* Tambahkan CSS untuk twitter */
 .twitter {
-  background-color:#55acee;
-  
+  background-color: #55acee;
 }
 
-/* Tambahkan CSS untuk btn-wrapper */
 .btn-wrapper {
-  margin-top: 20px;
- margin-bottom: 20px;
-
+  margin: 20px 0;
 }
 
-/* Tambahkan CSS untuk tag <p> di dalam class btn-wrapper */
-.btn-wrapper p{
-  margin-top: 10px;
- margin-bottom: 10px;
-
+.btn-wrapper p {
+  margin: 10px 0;
 }
-
